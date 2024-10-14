@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #F3F3F3;
+  --sidebarbg: #d4d5d7;
+  --text: #1d1c1d;
+  --graytext: #494849;
+  --highlightblack: #333133;
+  --highlightgray: #e2e1e2;
+  --hihlightsidebar: #cacaca;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Styles for the custom editor toolbar */
+.custom-editor-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Editor container styles to mimic Grammarly UI */
+.editor-container {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Suggestion container styles */
+.suggestions-container {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.suggestion-item {
+  color: #e53935;
+  margin-bottom: 8px;
+}
+
+.suggestion-details {
+  color: #757575;
+  font-size: 0.875rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+.progressbar-progress
+{
+  border-radius: 10px !important;
+}
